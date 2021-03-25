@@ -4,6 +4,7 @@ bins
 gens
 libs
 objs
+venv
 
 # Python items
 cython_debug/

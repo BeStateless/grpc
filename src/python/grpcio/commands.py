@@ -200,7 +200,8 @@ def try_cythonize(extensions, linetracing=False, mandatory=True):
             include_dir for extension in extensions
             for include_dir in extension.include_dirs
         ] + [CYTHON_STEM],
-        compiler_directives=cython_compiler_directives)
+        compiler_directives=cython_compiler_directives,
+        language_level="3")
 
 
 class BuildExt(build_ext.build_ext):
